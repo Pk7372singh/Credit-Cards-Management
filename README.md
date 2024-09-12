@@ -131,18 +131,4 @@ credit-card-management-system/
 5. Push to the branch (`git push origin feature-branch`).
 6. Open a pull request.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-- Author: Your Name
-- Email: your-email@example.com
-- GitHub: [your-username](https://github.com/your-username)
-```
-
-### Note:
-1. Replace `your-username` and `your-email@example.com` with your actual GitHub username and email address.
-2. Adjust the `API Endpoints` and other sections as per your actual implementation if they differ.
-3. This file assumes a `frontend` and `backend` directory structure, adjust it if your project structure differs.
