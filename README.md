@@ -51,7 +51,7 @@ This is a simple credit card management system built using React.js and Express.
 4. Start the backend server:
    ```sh
    cd backend
-   npm start
+   npm run dev
    ```
 
 5. Start the frontend server:
