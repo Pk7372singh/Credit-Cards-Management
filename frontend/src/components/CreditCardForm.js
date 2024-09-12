@@ -212,7 +212,7 @@ const CreditCardForm = ({ onSave, editCard }) => {
     const fetchBanks = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/banks/getBank"
+          "https://credit-cards-management.onrender.com/api/banks/getBank"
         );
         setBanks(response.data);
       } catch (error) {
