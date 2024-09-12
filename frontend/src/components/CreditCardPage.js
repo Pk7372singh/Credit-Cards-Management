@@ -99,7 +99,7 @@ const CreditCardPage = () => {
   const fetchCreditCards = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/credit-cards/getCreditCard"
+        "https://credit-cards-management.onrender.com/api/credit-cards/getCreditCard"
       );
       setCards(response.data); // Assuming response.data contains the list of cards
     } catch (error) {
@@ -111,7 +111,7 @@ const CreditCardPage = () => {
   const handleAddCard = async (card) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/credit-cards/addCreditCardDetails",
+        "https://credit-cards-management.onrender.com/api/credit-cards/addCreditCardDetails",
         card
       );
       setCards([...cards, response.data]); // Update state with new card
@@ -125,7 +125,7 @@ const CreditCardPage = () => {
   const handleEditCard = async (updatedCard) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/credit-cards/${updatedCard._id}`,
+        `https://credit-cards-management.onrender.com/api/credit-cards/${updatedCard._id}`,
         updatedCard
       );
       setCards(
@@ -141,7 +141,7 @@ const CreditCardPage = () => {
   // Delete a card
   const handleDeleteCard = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/credit-cards/${id}`);
+      await axios.delete(`https://credit-cards-management.onrender.com/api/credit-cards/${id}`);
       setCards(cards.filter((card) => card._id !== id)); // Update state to remove deleted card
     } catch (error) {
       console.error("Error deleting credit card:", error);
