@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://credit-cards-management-backend.onrender.com";
 
 export const getBanks = async () => {
   return axios.get(`${API_BASE_URL}/banks`);
