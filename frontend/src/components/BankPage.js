@@ -38,7 +38,7 @@ const BankPage = () => {
     const fetchBanks = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/banks/getBank"
+          "https://credit-cards-management.onrender.com/api/banks/getBank"
         ); // Backend route to get banks
         setBanks(response.data);
       } catch (error) {
@@ -61,7 +61,7 @@ const BankPage = () => {
     try {
       // Post request to backend to create a new bank
       const response = await axios.post(
-        "http://localhost:5000/api/banks/addBank",
+        "https://credit-cards-management.onrender.com/api/banks/addBank",
         {
           name: bankName,
         }
